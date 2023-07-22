@@ -1,0 +1,77 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                service part start
+==================================================================*/
+#service {
+    padding: 65px 0 70px;
+    border-bottom: 2px solid #e0e0e0;
+
+    .ser_head {
+        padding-bottom: 25px;
+
+        h3 {
+            @include fs(#0d113d, 25px, 600, $font_1);
+            text-transform: uppercase;
+            position: relative;
+            left: 15px;
+
+            &::after {
+                @include after(-5px, -15px, 38px, 5px, $hover);
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .ser_item {
+        position: relative;
+
+        .overly {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(25, 11, 35, 0.60);
+            border-radius: 5px;
+
+            .overly_text {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 17px 25px;
+                background: $hover;
+                border-radius: 0 0 5px 5px;
+
+                h4 {
+                    @include fs(#fff, 17px, 600, $font_1);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .more_ser {
+        background: #0d113d;
+        padding: 250px 0 55px;
+        border-radius: 5px;
+
+        a {
+            @include fs(#fff, 22px, 600, $font_1);
+            text-transform: uppercase;
+            position: relative;
+            left: 325px;
+
+            &::after {
+                @include after(40px, 0, 4px, 92px, #fff);
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+/*================================================================
+                                service part end
+==================================================================*/

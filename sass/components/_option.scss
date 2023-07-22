@@ -1,0 +1,34 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                option part start
+==================================================================*/
+#option {
+    padding: 70px 0;
+
+    .option_item {
+        .item_head {
+            padding-top: 20px;
+            padding-left: 10px;
+
+            h3 {
+                @include fs(#0d113d, 21px, 600, $font_1);
+                text-transform: uppercase;
+            }
+        }
+
+        .item_pera {
+            padding-top: 25px;
+
+            p {
+                @include fs(#0d113d, 15px, 300, $font_1);
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+/*================================================================
+                                option part end
+==================================================================*/

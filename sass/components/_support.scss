@@ -1,0 +1,60 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                support part start
+==================================================================*/
+#support {
+    padding: 40px 0 0;
+
+    .sup_content {
+        margin-top: 20px;
+
+        h3 {
+            @include fs($head_col, 33px, 600, $font_1);
+        }
+
+        p {
+            @include fs($head_col, 15px, 300, $font_1);
+            line-height: 26px;
+            padding-top: 30px;
+        }
+
+        ul {
+            margin-top: 25px;
+            list-style: disc;
+            margin-left: 15px;
+
+            li {
+                @include fs(#616161, 15px, 300, $font_1);
+                line-height: 35px;
+            }
+        }
+    }
+
+    .sup_link {
+        padding: 50px 0;
+        background: #753d9d;
+        justify-content: space-between;
+
+        .link_text {
+            padding-top: 15px;
+
+            h3 {
+                @include fs(#fff, 25px, 600, $font_1);
+            }
+        }
+
+        .link_btn {
+            margin-left: 50px;
+
+            a {
+                @include btn;
+            }
+        }
+    }
+}
+
+/*================================================================
+                                support part end
+==================================================================*/

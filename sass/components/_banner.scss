@@ -1,0 +1,76 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                banner part start
+==================================================================*/
+#banner {
+    padding: 320px 0 30px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        @include after(0, 0, 100%, 100%, rgba(25, 11, 35, 0.6));
+        z-index: -1;
+    }
+
+    .bann_slider {
+        .slick-dots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 141px;
+
+            .slick-active {
+                button {
+                    background: $hover;
+                }
+            }
+
+            li {
+                margin: 0 7.5px;
+
+                button {
+                    height: 7px;
+                    width: 68px;
+                    border-radius: 3px;
+                    background: #817e87;
+                    border: none;
+                    font-size: 0;
+                }
+            }
+        }
+    }
+
+    .banner_text {
+        h1 {
+            @include fs(#fff, 70px, 800, $font_1);
+            text-transform: uppercase;
+
+            span {
+                color: #a066c9;
+            }
+        }
+
+        p {
+            @include fs(#fff, 18px, 400, $font_1);
+            line-height: 26px;
+            margin-top: 20px;
+        }
+
+        a {
+            @include btn;
+            transition: all linear .3s;
+            margin: 55px 15px 0;
+
+            &:hover {
+                background: $hover;
+                border: 2px solid $hover;
+            }
+        }
+    }
+}
+
+/*================================================================
+                                banner part end
+==================================================================*/

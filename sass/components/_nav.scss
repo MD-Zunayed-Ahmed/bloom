@@ -1,0 +1,33 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                nav part start
+==================================================================*/
+.menu {
+    padding: 30px 0 15px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    .main_menu {
+        ul {
+            li {
+                a {
+                    @include fs(#fff, 15px, 400, $font_1);
+                    text-transform: uppercase;
+                    transition: all linear .3s;
+
+                    &:hover {
+                        color: #753d9d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================================
+                                nav part end
+==================================================================*/

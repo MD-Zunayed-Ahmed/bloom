@@ -1,0 +1,37 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                learn more part start
+==================================================================*/
+#learn {
+    padding: 95px 0 105px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        @include after(0, 0, 100%, 100%, rgba(25, 11, 35, 0.6));
+        z-index: -1;
+    }
+
+    .learn_content {
+        h2 {
+            @include fs(#fff, 50px, 600, $font_1);
+        }
+
+        a {
+            @include btn;
+            transition: all linear .3s;
+            margin-top: 65px;
+
+            &:hover {
+                background: $hover;
+                border: 2px solid $hover;
+            }
+        }
+    }
+}
+
+/*================================================================
+                                learn more part end
+==================================================================*/

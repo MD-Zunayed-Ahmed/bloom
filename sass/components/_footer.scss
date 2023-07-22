@@ -1,0 +1,115 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                footer part start
+==================================================================*/
+#footer {
+    background: $head_col;
+
+    .foot_form {
+        background: $hover;
+        padding: 33px 25px;
+
+        .form_text {
+            padding-top: 10px;
+
+            h3 {
+                @include fs(#fff, 21px, 600, $font_1);
+                text-transform: uppercase;
+            }
+
+            p {
+                @include fs(#fff, 15px, 300, $font_1);
+            }
+        }
+
+        .form_input {
+            input {
+                padding: 15px 24px;
+                border: 2px solid #d3b1eb;
+                border-radius: 5px;
+                @include fs(#e0c2f6, 15px, 300, $font_1);
+                background: transparent;
+                width: 100%;
+            }
+        }
+
+        .form_btn {
+            text-align: right;
+
+            button {
+                @include btn;
+                background: transparent;
+            }
+        }
+    }
+
+    .foot_main {
+        padding: 70px 0 40px;
+
+        .main_text {
+            p {
+                @include fs(#fff, 15px, 300, $font_1);
+                line-height: 26px;
+                padding-top: 40px;
+            }
+        }
+
+        .foot_menu {
+            padding-top: 35px;
+            padding-bottom: 80px;
+
+            ul {
+                border-right: 1px solid #1e224d;
+
+                li {
+                    @include fs(#fff, 15px, 300, $font_1);
+                    line-height: 39px;
+                    text-transform: uppercase;
+                    transition: all linear .3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+
+        .no_border {
+            border: 0px solid #1e224d !important;
+        }
+
+        .foot_bottom {
+            padding-top: 30px;
+            border-top: 1px solid #1e224d;
+
+            p {
+                @include fs(#b3b5d1, 15px, 300, $font_1);
+            }
+
+            ul {
+                padding-left: 59px;
+
+                li {
+                    padding-left: 30px;
+
+                    i {
+                        font-size: 20px;
+                        color: #fff;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================================
+                                footer part end
+==================================================================*/

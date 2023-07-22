@@ -1,0 +1,28 @@
+@mixin fs ($c, $fs, $fw, $ff){
+    color: $c;
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+}
+
+@mixin after ($t, $l, $h, $w, $bg){
+    position: absolute;
+    content: '';
+    top: $t;
+    left: $l;
+    height: $h;
+    width: $w;
+    background: $bg;
+}
+
+@mixin btn{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $font_1;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 15px 70px;
+    border-radius: 5px;
+}
+

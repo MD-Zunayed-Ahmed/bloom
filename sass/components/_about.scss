@@ -1,0 +1,53 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                about part start
+==================================================================*/
+#about {
+    padding: 71px 0;
+    border-bottom: 3px solid #e0e0e0;
+
+    .about_text {
+        margin-top: 20px;
+
+        p {
+            @include fs(#0d113d, 15px, 300, $font_1);
+            line-height: 26px;
+            margin-top: 30px;
+        }
+
+        a {
+            margin-top: 45px;
+            color: #0d113d;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: $font_1;
+            text-transform: uppercase;
+            border: 2px solid #0d113d;
+            padding: 20px 72px;
+            border-radius: 5px;
+            transition: all linear .3s;
+
+            &:hover {
+                background: $hover;
+                border: 2px solid $hover;
+                color: #fff;
+            }
+        }
+    }
+
+    .about_img {
+        position: relative;
+        border-radius: 10px;
+
+        &::after {
+            @include after(0, 0, 100%, 100%, rgba(25, 11, 35, 0.6));
+            border-radius: 10px;
+        }
+    }
+}
+
+/*================================================================
+                                about part end
+==================================================================*/

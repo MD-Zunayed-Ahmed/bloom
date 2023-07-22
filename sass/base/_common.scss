@@ -1,0 +1,73 @@
+/*================================================================
+                            common css start
+==================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.common_head {
+    position: relative;
+    margin-left: 20px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: -19px;
+        height: 85px;
+        width: 5px;
+        background: #753d9d;
+        border-radius: 2px;
+    }
+
+    h3 {
+        color: #0d113d;
+        font-size: 36px;
+        font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+
+        span {
+            color: #753d9d;
+        }
+    }
+
+    h4 {
+        color: #0d113d;
+        font-size: 36px;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/*================================================================
+                            common css end
+==================================================================*/

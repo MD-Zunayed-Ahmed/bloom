@@ -1,0 +1,63 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                portfoio part start
+==================================================================*/
+#portfolio {
+    padding: 70px 0;
+    position: relative;
+
+    .port_head {
+        padding-bottom: 25px;
+
+        h3 {
+            @include fs(#0d113d, 25px, 600, $font_1);
+            text-transform: uppercase;
+            position: relative;
+            left: 15px;
+
+            &::after {
+                @include after(-5px, -15px, 38px, 5px, $hover);
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .portfolio_slider {
+        padding-top: 25px;
+
+        .port_slide {
+            padding: 0 12px;
+        }
+
+        .prev_arr,
+        .nxt_arr {
+            font-size: 30px;
+            color: #e9e9e9;
+            position: absolute;
+            top: -55px;
+            right: 0;
+            text-align: right;
+            width: 30px;
+            cursor: pointer;
+            transition: all linear .3s;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+
+        .prev_arr {
+            margin-right: 60px;
+        }
+
+        .nxt_arr {
+            margin-right: 20px;
+        }
+    }
+}
+
+/*================================================================
+                                portfoio part end
+==================================================================*/

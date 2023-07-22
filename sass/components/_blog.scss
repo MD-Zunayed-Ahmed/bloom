@@ -1,0 +1,61 @@
+@import'../variables/variable';
+@import'../mixins/mixin';
+
+/*================================================================
+                                blog part start
+==================================================================*/
+#blog {
+    padding-bottom: 85px;
+
+    .blog_head {
+        padding-bottom: 25px;
+
+        h3 {
+            @include fs(#0d113d, 25px, 600, $font_1);
+            text-transform: uppercase;
+            position: relative;
+            left: 15px;
+
+            &::after {
+                @include after(-5px, -15px, 38px, 5px, $hover);
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .blog_sec {
+
+        .blog_content {
+            padding-bottom: 35px;
+            padding-top: 40px;
+            border-bottom: 2px solid #f2f2f2;
+
+            .content_head {
+                h4 {
+                    @include fs($hover, 18px, 600, $font_1);
+                }
+            }
+
+            .content_date {
+                h5 {
+                    @include fs(#a2a2a2, 16px, 400, $font_1);
+                }
+            }
+
+            .content_by {
+                p {
+                    @include fs(#a2a2a2, 15px, 400, $font_1);
+
+                    span {
+                        @include fs($head_col, 15px, 400, $font_1);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================================
+                                blog part end
+==================================================================*/
