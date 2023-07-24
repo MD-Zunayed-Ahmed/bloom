@@ -670,12 +670,12 @@ li {
 #footer .foot_main .foot_bottom ul li {
   padding-left: 30px;
 }
-#footer .foot_main .foot_bottom ul li i {
+#footer .foot_main .foot_bottom ul li a i {
   font-size: 20px;
   color: #fff;
   cursor: pointer;
 }
-#footer .foot_main .foot_bottom ul li i:hover {
+#footer .foot_main .foot_bottom ul li a:hover i {
   color: #753d9d;
 }
 
